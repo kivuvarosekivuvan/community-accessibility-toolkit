@@ -1,0 +1,29 @@
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 columns */
+    grid-template-rows: repeat(4, auto); /* 4 rows */
+    gap: 20px; /* Space between items */
+  }
+  
+  .video-item {
+    background: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-item h3 {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  section{
+    max-width: 1200px;
+  }
+  @media (max-width: 768px) {
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 3 columns */
+      grid-template-rows: repeat(4, auto); /* 4 rows */
+      gap: 20px; /* Space between items */
+    }
+  }

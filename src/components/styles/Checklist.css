@@ -1,0 +1,168 @@
+.checklist-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+  }
+  
+  .progress {
+    height: 10px;
+    background-color: #4CAF50;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .completion-text {
+    text-align: center;
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  
+  .checklist {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .checklist li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .checklist li.checked {
+    background-color: #d4edda;
+  }
+  
+  .checklist li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  label {
+    flex-grow: 1;
+    margin-left: 10px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  .checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  input[type="checkbox"]:checked + .checkmark {
+    background-color: #4CAF50;
+  }
+  
+  input[type="checkbox"]:checked + .checkmark::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  /* Tooltip styles */
+  .tooltip {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  label:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .share-button, .export-button, .set-reminder-button, .clear-history-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .share-button:hover,
+  .export-button:hover,
+  .set-reminder-button:hover,
+  .clear-history-button:hover {
+    background-color: #45a049;
+  }
+  
+  .reminder-section {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .reminder-section input[type="text"],
+  .reminder-section input[type="datetime-local"] {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .history-section {
+    margin-top: 20px;
+  }
+  
+  .history-section h3 {
+    text-align: center;
+  }
+  
+  .history-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .clear-history-button {
+    background-color: #d9534f;
+  }
+  
+  .clear-history-button:hover {
+    background-color: #c9302c;
+  }

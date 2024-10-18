@@ -1,0 +1,98 @@
+.section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: none;
+  }
+  
+  .header {
+    text-align: center;
+    color: #333;
+  }
+  
+  .list {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between items */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .listItem {
+    margin: 5px 0; /* Adjust margin for vertical spacing */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for better visibility */
+  }
+  
+  .link {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .searchInput {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .searchInput:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pageNumber {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #007BFF;
+    cursor: pointer;
+    user-select: none; /* Prevent text selection on click */
+  }
+  
+  .pageNumber:hover {
+    background-color: #e7f0ff; /* Change background on hover */
+  }
+  
+  .pageNumber.active {
+    background-color: #007BFF;
+    color: #fff;
+    pointer-events: none; /* Disable pointer events for the active page */
+  }
+  
+  .arrow {
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    user-select: none; /* Prevent text selection on click */
+    color: #007BFF;
+  }
+  
+  .arrow:hover {
+    background-color: #e7f0ff; /* Change background on hover */
+  }

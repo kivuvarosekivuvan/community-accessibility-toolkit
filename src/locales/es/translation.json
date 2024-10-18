@@ -1,0 +1,95 @@
+{
+    "title": "Kit de herramientas de accesibilidad impulsado por la comunidad",
+    "tabs": {
+      "colorContrast": "Analizador de Contraste de Color",
+      "fontSize": "Ajustador de Tamaño de Fuente",
+      "keyboardNavigator": "Navegador de Teclado",
+      "checklist": "Mi Lista de Verificación",
+      "resources": "Biblioteca de Recursos",
+      "videoTutorials": "Tutoriales en Video",
+      "curiosity": "Rincón de la Curiosidad",
+      "userFeedback": "Comentarios de Usuarios",
+      "discussionForum": "Foro de Discusión",
+      "achievements": "Logros",
+      "webinars": "Seminarios Web"
+    },
+    "themeSwitch": {
+      "dark": "Cambiar a Modo Claro",
+      "light": "Cambiar a Modo Oscuro"
+    },
+    "colorContrastAnalyzer": {
+      "heading": "Analizador de Contraste de Color",
+      "foregroundLabel": "Color de Primer Plano",
+      "backgroundLabel": "Color de Fondo",
+      "contrastRatio": "Ratio de Contraste: {{ratio}}",
+      "goodContrast": "¡Buen Contraste!",
+      "poorContrast": "¡Pobre Contraste!",
+      "recommendations": "Recomendaciones de Accesibilidad",
+      "savePalette": "Guardar Paleta",
+      "paletteSaved": "¡Paleta guardada! Verifique la consola para más detalles."
+    },
+    "fontSizeAdjuster": {
+      "heading": "Ajustador de Tamaño de Fuente",
+      "placeholder": "Ingrese su texto aquí",
+      "fontSizeLabel": "Tamaño de Fuente:",
+      "textColorLabel": "Color del Texto:",
+      "fontFamilyLabel": "Familia de Fuente:",
+      "suggestedFontSizes": "Tamaños de Fuente Sugeridos",
+      "reset": "Reiniciar",
+      "suggestionBodyText": "Texto del Cuerpo (16px)",
+      "suggestionHeadingH1": "Encabezado H1 (24px)",
+      "suggestionHeadingH2": "Encabezado H2 (20px)",
+      "suggestionSmallText": "Texto Pequeño (12px)",
+      "suggestionLargeText": "Texto Grande (18px)"
+    },
+    "keyboardNavigator": {
+      "heading": "Simulador de Navegación por Teclado",
+      "instructions": "Practique navegar este ejemplo usando la tecla Tab.",
+      "popupTitle": "¡Felicidades!",
+      "popupMessage": "Has aprendido a navegar utilizando el teclado.",
+      "popupLinkText": "WebAIM: Accesibilidad del Teclado",
+      "popupLink": "¿Quieres implementarlo? Dirígete aquí para leer más: ",
+      "button1": "Botón 1",
+      "button2": "Botón 2",
+      "button3": "Botón 3",
+      "button4": "Botón 4",
+      "button5": "Botón 5"
+    },
+      "checklist": {
+        "title": "Lista de Verificación de Accesibilidad",
+        "progress": "Progreso",
+        "completed": "% Completado",
+        "shareChecklist": "Compartir Lista",
+        "exportPDF": "Exportar a PDF",
+        "setReminder": "Establecer Recordatorio",
+        "reminderMessage": "Establecer un mensaje de recordatorio...",
+        "deadline": "Establecer una fecha límite...",
+        "progressHistory": "Historia del Progreso",
+        "clearHistory": "Borrar Historia",
+        "reminderAlert": "Recordatorio: ¡Tienes elementos sin marcar para completar!",
+        "clearProgressHistory": "Historia del progreso borrada."
+      },
+      "items": {
+        "semanticHTML": "Usar HTML Semántico",
+        "altText": "Proporcionar texto alternativo para imágenes",
+        "keyboardNavigation": "Asegurar la navegación por teclado",
+        "colorContrast": "Usar contraste de color suficiente",
+        "ariaRoles": "Implementar roles ARIA donde sea necesario"
+      },
+      "tips": {
+        "semanticHTML": "HTML semántico ayuda a los motores de búsqueda y tecnologías de asistencia a entender tu contenido.",
+        "altText": "El texto alternativo asegura que los usuarios con discapacidad visual puedan acceder al contenido de la imagen.",
+        "keyboardNavigation": "La navegación por teclado es esencial para los usuarios que no pueden usar un ratón.",
+        "colorContrast": "Un buen contraste de color hace que el texto sea legible para los usuarios con discapacidades visuales.",
+        "ariaRoles": "Los roles ARIA proporcionan contexto adicional a las tecnologías de asistencia."
+      },
+      "alerts": {
+        "setValidDeadline": "Por favor, establece una fecha límite válida.",
+        "reminderSet": "Recordatorio establecido para: {{reminder}} el {{deadline}}",
+        "linkCopied": "¡Enlace compartible copiado al portapapeles!"
+      },
+      "resource": {
+        "header": "🌟 Biblioteca de Recursos 🌟",
+        "searchPlaceholder": "Buscar recursos..."
+      }
+  }

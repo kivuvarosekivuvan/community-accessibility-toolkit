@@ -1,0 +1,94 @@
+{
+    "title": "Community-Driven Accessibility Toolkit",
+    "tabs": {
+      "colorContrast": "Color Contrast Analyzer",
+      "fontSize": "Font Size Adjuster",
+      "keyboardNavigator": "Keyboard Navigator",
+      "checklist": "My Checklist",
+      "resources": "Resource Library",
+      "videoTutorials": "Video Tutorials",
+      "curiosity": "Curiosity Corner",
+      "userFeedback": "User Feedback",
+      "discussionForum": "Discussion Forum",
+      "achievements": "Achievements",
+      "webinars": "Webinars"
+    },
+    "themeSwitch": {
+      "dark": "Switch to Light Mode",
+      "light": "Switch to Dark Mode"
+    },
+    "colorContrastAnalyzer": {
+      "heading": "Color Contrast Analyzer",
+      "foregroundLabel": "Foreground Color",
+      "backgroundLabel": "Background Color",
+      "contrastRatio": "Contrast Ratio: {{ratio}}",
+      "goodContrast": "Good Contrast!",
+      "poorContrast": "Poor Contrast!",
+      "recommendations": "Accessibility Recommendations",
+      "savePalette": "Save Palette",
+      "paletteSaved": "Palette saved! Check the console for details."
+    },
+    "fontSizeAdjuster": {
+      "heading": "Font Size Adjuster",
+      "placeholder": "Enter your text here",
+      "fontSizeLabel": "Font Size:",
+      "textColorLabel": "Text Color:",
+      "fontFamilyLabel": "Font Family:",
+      "suggestedFontSizes": "Suggested Font Sizes",
+      "reset": "Reset",
+      "suggestionBodyText": "Body Text (16px)",
+      "suggestionHeadingH1": "Heading H1 (24px)",
+      "suggestionHeadingH2": "Heading H2 (20px)",
+      "suggestionSmallText": "Small Text (12px)",
+      "suggestionLargeText": "Large Text (18px)"
+    },
+    "keyboardNavigator": {
+      "heading": "Keyboard Navigation Simulator",
+      "instructions": "Practice navigating this example using the Tab key.",
+      "popupTitle": "Congratulations!",
+      "popupMessage": "You have learned how to navigate using the keyboard.",
+      "popupLinkText": "WebAIM: Keyboard Accessibility",
+      "popupLink": "Want to implement it? Head here to read more: ",
+      "button1": "Button 1",
+      "button2": "Button 2",
+      "button3": "Button 3",
+      "button4": "Button 4",
+      "button5": "Button 5"
+    },"checklist": {
+    "title": "Accessibility Checklist",
+    "progress": "Progress",
+    "completed": "% Completed",
+    "shareChecklist": "Share Checklist",
+    "exportPDF": "Export to PDF",
+    "setReminder": "Set Reminder",
+    "reminderMessage": "Set a reminder message...",
+    "deadline": "Set a deadline...",
+    "progressHistory": "Progress History",
+    "clearHistory": "Clear History",
+    "reminderAlert": "Reminder: You have unchecked items to complete!",
+    "clearProgressHistory": "Progress history cleared."
+  },
+  "items": {
+    "semanticHTML": "Use semantic HTML",
+    "altText": "Provide alt text for images",
+    "keyboardNavigation": "Ensure keyboard navigation",
+    "colorContrast": "Use sufficient color contrast",
+    "ariaRoles": "Implement ARIA roles where necessary"
+  },
+  "tips": {
+    "semanticHTML": "Semantic HTML helps search engines and assistive technologies understand your content.",
+    "altText": "Alt text ensures that visually impaired users can access image content.",
+    "keyboardNavigation": "Keyboard navigation is essential for users who cannot use a mouse.",
+    "colorContrast": "Good color contrast makes text readable for users with visual impairments.",
+    "ariaRoles": "ARIA roles provide additional context to assistive technologies."
+  },
+  "alerts": {
+    "setValidDeadline": "Please set a valid deadline.",
+    "reminderSet": "Reminder set for: {{reminder}} on {{deadline}}",
+    "linkCopied": "Shareable link copied to clipboard!"
+  },
+  "resource": {
+    "header": "🌟 Resource Library 🌟",
+    "searchPlaceholder": "Search resources..."
+  }
+  }

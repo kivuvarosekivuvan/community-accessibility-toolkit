@@ -1,0 +1,95 @@
+{
+    "title": "Toolkit ya Jamii ya Accessibility",
+    "tabs": {
+      "colorContrast": "Contrast ya rangi",
+      "fontSize": "Ukubwa wa words",
+      "keyboardNavigator": "Test ya Keyboard",
+      "checklist": "List ya Accessibility",
+      "resources": "Maktaba ya Rasilimali",
+      "videoTutorials": "Masomo ya Videos",
+      "curiosity": "Kutamani kujua",
+      "userFeedback": "Maoni ya Watumiaji",
+      "discussionForum": "Jukwaa la discussions",
+      "achievements": "Mafanikio",
+      "webinars": "Webinari"
+    },
+    "themeSwitch": {
+      "dark": "Badilisha kuwa Mwangaza wa giza",
+      "light": "Badilisha kuwa Mwangaza wa mwanga"
+    },
+    "colorContrastAnalyzer": {
+      "heading": "Kuchanganua Mwangaza wa Rangi",
+      "foregroundLabel": "Rangi ya Mbele",
+      "backgroundLabel": "Rangi ya Nyuma",
+      "contrastRatio": "Kiwango cha Mwangaza: {{ratio}}",
+      "goodContrast": "Mwangaza mzuri!",
+      "poorContrast": "Mwangaza mbaya!",
+      "recommendations": "Mapendekezo ya Ufikiaji",
+      "savePalette": "Hifadhi Paleti",
+      "paletteSaved": "Paleti imehifadhiwa! Angalia kwenye konsoli kwa maelezo zaidi."
+    },
+    "fontSizeAdjuster": {
+      "heading": "Kuchange Ukubwa wa Fonti",
+      "placeholder": "Weka text yako hapa",
+      "fontSizeLabel": "Ukubwa wa Fonti:",
+      "textColorLabel": "Rangi ya Maandishi:",
+      "fontFamilyLabel": "Familia ya Fonti:",
+      "suggestedFontSizes": "Fonts Zenye Zikosuggested",
+      "reset": "Rekebisha",
+      "suggestionBodyText": "Maandishi ya Mwili (16px)",
+      "suggestionHeadingH1": "Kichwa H1 (24px)",
+      "suggestionHeadingH2": "Kichwa H2 (20px)",
+      "suggestionSmallText": "Maandishi Madogo (12px)",
+      "suggestionLargeText": "Maandishi Makubwa (18px)"
+    },
+    "keyboardNavigator": {
+      "heading": "Msimulizi wa Usanidi wa Kibodi",
+      "instructions": "Fanya mazoezi ya kuzunguka mfano huu kwa kutumia ufunguo wa Tab.",
+      "popupTitle": "Hongera!",
+      "popupMessage": "Hurray ushakua guru, unajua kutumia keyboard sasa.",
+      "popupLinkText": "WebAIM: Ufikiaji wa Kibodi",
+      "popupLink": "Unataka kuijaribu? Fuata hii link: ",
+      "button1": "Baton 1",
+      "button2": "Baton 2",
+      "button3": "Baton 3",
+      "button4": "Baton 4",
+      "button5": "Baton 5"
+    },
+      "checklist": {
+        "title": "Orodha ya Ufikiaji",
+        "progress": "Mwangaza",
+        "completed": "% Imefanywa",
+        "shareChecklist": "Shiriki Orodha",
+        "exportPDF": "Export katika PDF",
+        "setReminder": "Weka Ukumbusho",
+        "reminderMessage": "Weka ujumbe wa ukumbusho...",
+        "deadline": "Weka tarehe ya mwisho...",
+        "progressHistory": "Historia ya Mwangaza",
+        "clearHistory": "Futa Historia",
+        "reminderAlert": "Ukumbusho: Una vitu visivyokamilika!",
+        "clearProgressHistory": "Historia ya mwangaza imefutwa."
+      },
+      "items": {
+        "semanticHTML": "Tumia HTML ya Kihisia",
+        "altText": "Toa maandiko mbadala kwa picha",
+        "keyboardNavigation": "Hakikisha usafiri wa kibodi",
+        "colorContrast": "Tumia tofauti ya rangi ya kutosha",
+        "ariaRoles": "Tekeleza majukumu ya ARIA inapohitajika"
+      },
+      "tips": {
+        "semanticHTML": "HTML ya kihisia inasaidia injini za utaftaji na teknolojia za kusaidia kuelewa yaliyomo.",
+        "altText": "Maandiko mbadala yanahakikisha kwamba watumiaji wenye uoni mdogo wanaweza kufikia maudhui ya picha.",
+        "keyboardNavigation": "Usafiri wa kibodi ni muhimu kwa watumiaji ambao hawawezi kutumia panya.",
+        "colorContrast": "Tofauti nzuri ya rangi inafanya maandiko yasomeke kwa watumiaji wenye ulemavu wa kuona.",
+        "ariaRoles": "Majukumu ya ARIA yanatoa muktadha wa ziada kwa teknolojia za kusaidia."
+      },
+      "alerts": {
+        "setValidDeadline": "Tafadhali weka tarehe ya mwisho halali.",
+        "reminderSet": "Ukumbusho umewekwa kwa: {{reminder}} tarehe {{deadline}}",
+        "linkCopied": "Kiungo kinachoweza kushirikiwa kimekopi."
+      },
+      "resource": {
+        "header": "🌟 Libu ya Resources🌟",
+        "searchPlaceholder": "Tafuta resources..."
+      }
+  }
