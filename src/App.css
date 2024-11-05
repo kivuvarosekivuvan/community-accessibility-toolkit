@@ -115,11 +115,9 @@ button:hover {
 }
 
 .tts-button {
-  margin-top: 20px; /* Adjust margin as needed */
+  margin-top: 20px;
 }
-/* Existing styles remain unchanged */
 
-/* New styles for the hamburger menu */
 .hamburger {
   background: none;
   border: none;
@@ -127,27 +125,27 @@ button:hover {
   color: white;
   cursor: pointer;
   margin-left: 10px;
-  display: none; /* Hide by default */
+  display: none;
 }
 
 
 
 @media (max-width: 768px) {
   .hamburger {
-    display: block; /* Show hamburger on smaller screens */
+    display: block;
   }
 
   .sidebar {
-    left: -240px; /* Hide by default on smaller screens */
+    left: -240px;
   }
 
   .sidebar.open {
-    left: 0; /* Show sidebar when open */
+    left: 0;
   }
 
-  /* Ensure content is not obscured by sidebar */
+
   .content {
-    margin-left: 0; /* Reset margin */
+    margin-left: 0;
   }
   .sidebar {
     width: 200px;
@@ -155,20 +153,19 @@ button:hover {
     padding: 15px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, color 0.3s;
-    position: fixed; /* Make sidebar fixed */
+    position: fixed;
     height: 100vh;
     overflow-y: auto;
     z-index: 1000;
   }
   
   .sidebar.open {
-    left: 0; /* Show sidebar when open */
+    left: 0;
   }
 }
 
 @media (max-width: 480px) {
-  /* Adjust sidebar for smaller screens */
   .sidebar ul li {
-    padding: 15px; /* Increase padding for touch targets */
+    padding: 15px;
   }
 }

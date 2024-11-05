@@ -12,11 +12,11 @@ import UserFeedback from './components/UserFeedback';
 import DiscussionForum from './components/DiscussionForum';
 import Achievements from './components/Achievements';
 import Webinars from './components/Webinars';
-import './i18n'; // Import the i18n configuration
+import './i18n';
 
 function App() {
   const { t, i18n } = useTranslation();
-  const [activeTab, setActiveTab] = useState('checklist');
+  const [activeTab, setActiveTab] = useState('ColorContrastAnalyzer', true);
   const [darkMode, setDarkMode] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 

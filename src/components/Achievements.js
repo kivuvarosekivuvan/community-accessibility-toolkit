@@ -1,4 +1,3 @@
-// src/components/Achievements.js
 import React from 'react';
 
 const Achievements = () => {

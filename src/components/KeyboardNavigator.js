@@ -16,7 +16,6 @@ const KeyboardNavigator = () => {
     setPopupVisible(false);
   };
 
-  // Close the popup when the Escape key is pressed
   const handleEscapePress = (event) => {
     if (event.key === 'Escape') {
       closePopup();
@@ -50,10 +49,10 @@ const KeyboardNavigator = () => {
       {isPopupVisible && (
         <div className="popup">
           <div className="popup-content">
-            <span 
-              className="close" 
-              tabIndex="0" 
-              onClick={closePopup} 
+            <span
+              className="close"
+              tabIndex="0"
+              onClick={closePopup}
               onKeyPress={(e) => e.key === 'Enter' && closePopup()}
             >
               &times;

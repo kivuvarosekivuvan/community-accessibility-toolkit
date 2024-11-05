@@ -10,17 +10,17 @@ const resources = {
   en: { translation: translationEN },
   es: { translation: translationES },
   sw: { translation: translationSW },
-  sh: { translation: translationSH }, // for Swahili Sheng
+  sh: { translation: translationSH },
 }
 
 i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'en', // default language
-    fallbackLng: 'en', // fallback language
+    lng: 'en',
+    fallbackLng: 'en',
     interpolation: {
-      escapeValue: false, // react already does escaping
+      escapeValue: false,
     },
   });
 

@@ -23,7 +23,7 @@ const VideoTutorials = () => {
             <h3>{video.title}</h3>
             <iframe
               width="100%"
-              height="315" // Increased height for better visibility
+              height="315"
               src={video.url}
               title={video.title}
               frameBorder="0"

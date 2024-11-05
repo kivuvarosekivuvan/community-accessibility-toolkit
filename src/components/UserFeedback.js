@@ -10,13 +10,11 @@ const UserFeedback = () => {
 
   const handleSubmit = () => {
     if (feedback) {
-      // Display success popup
       setShowSuccessPopup(true);
       setTimeout(() => {
         setShowSuccessPopup(false);
-      }, 3000); // Popup will disappear after 3 seconds
+      }, 3000);
 
-      // Reset form
       setFeedback('');
       setRating(0);
       setCategory('');

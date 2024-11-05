@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import './styles/ResourceLibrary.css'; // Import the CSS file
+import './styles/ResourceLibrary.css';
 
 const resources = [
   { title: "Web Content Accessibility Guidelines (WCAG)", url: "https://www.w3.org/WAI/WCAG21/quickref/", description: "A comprehensive guide to making web content accessible to people with disabilities." },

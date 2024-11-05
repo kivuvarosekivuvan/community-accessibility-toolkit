@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next'; // Import useTranslation
+import { useTranslation } from 'react-i18next';
 import './styles/Checklist.css';
 import jsPDF from 'jspdf';
 
 const Checklist = () => {
-  const { t } = useTranslation(); // Initialize translation
+  const { t } = useTranslation();
   const [checkedItems, setCheckedItems] = useState(() => {
     const saved = localStorage.getItem('checkedItems');
     return saved ? JSON.parse(saved) : [];
@@ -80,11 +80,11 @@ const Checklist = () => {
       const deadlineDate = new Date(deadline);
       if (deadlineDate && deadlineDate <= now) {
         alert(t('alerts.reminderAlert'));
-        setDeadline(''); // Clear the deadline after reminder
+        setDeadline('');
       }
-    }, 60000); // Check every minute
+    }, 60000);
 
-    return () => clearInterval(interval); // Cleanup on component unmount
+    return () => clearInterval(interval);
   }, [deadline]);
 
   const clearProgressHistory = () => {

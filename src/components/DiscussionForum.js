@@ -1,4 +1,3 @@
-// src/components/DiscussionForum.js
 import React from 'react';
 
 const DiscussionForum = () => {
