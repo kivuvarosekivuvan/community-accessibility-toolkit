@@ -2,6 +2,8 @@
 
 Hello there! Welcome to the **Community Accessibility Toolkit**—your one-stop solution for building a more inclusive web. Whether you’re a developer, designer, or simply passionate about accessibility, this toolkit is crafted with you in mind. My goal? To empower you with the resources and tools you need to ensure everyone can enjoy a seamless digital experience.
 
+![Overview of the tool](Screenshot 2024-11-05 at 08.37.15)
+
 ## What’s Inside?
 
 ### 🎨 Contrast Color Analyzer
