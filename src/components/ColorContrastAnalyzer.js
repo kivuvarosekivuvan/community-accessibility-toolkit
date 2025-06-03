@@ -9,12 +9,16 @@ const ColorContrastAnalyzer = () => {
   const contrastRatio = calculateContrast(foreground, background);
   const recommendations = getRecommendations();
 
+
+  // I'm trying to compute the two hex values (fg and bg)for their luminance using the getLuminance function
   function calculateContrast(fg, bg) {
     const fgLuminance = getLuminance(fg);
     const bgLuminance = getLuminance(bg);
     return (Math.max(fgLuminance, bgLuminance) + 0.05) / (Math.min(fgLuminance, bgLuminance) + 0.05);
   }
 
+
+  // this is basically converting a hex color to its RGB components and computes its luminance using specific weights for each color channel
   function getLuminance(hex) {
     const rgb = parseInt(hex.slice(1), 16);
     const r = (rgb >> 16) & 0xff;
@@ -23,6 +27,7 @@ const ColorContrastAnalyzer = () => {
     return (0.2126 * (r / 255) + 0.7152 * (g / 255) + 0.0722 * (b / 255));
   }
 
+// returning the array with the suggested good contrast colors
   function getRecommendations() {
     return [
       { fg: '#FFFFFF', bg: '#000000', ratio: calculateContrast('#FFFFFF', '#000000') },
@@ -31,6 +36,8 @@ const ColorContrastAnalyzer = () => {
     ];
   }
 
+
+  // this is creating an object with the three properties and laters sends an alert
   const savePalette = () => {
     const palette = {
       foreground,

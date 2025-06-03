@@ -12,16 +12,22 @@ const KeyboardNavigator = () => {
     }
   };
 
+  // this here  sets isPopupVisible back to false, hiding the popup
   const closePopup = () => {
     setPopupVisible(false);
   };
 
+  // checking if the pressed key is Escape. If it is, I call closePopup, which hides the popup
   const handleEscapePress = (event) => {
     if (event.key === 'Escape') {
       closePopup();
     }
   };
 
+
+  // The useEffect hook adds the Escape key listener to the window when the popup is visible.
+// If the popup is not visible, it removes the listener.
+// The cleanup function ensures that the listener is removed when the component unmounts or when the visibility changes.
   useEffect(() => {
     if (isPopupVisible) {
       window.addEventListener('keydown', handleEscapePress);

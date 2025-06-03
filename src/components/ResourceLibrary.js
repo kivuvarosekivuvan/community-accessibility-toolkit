@@ -35,18 +35,26 @@ const ResourceLibrary = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
 
+
+  // filtering the resources array while being case sensitive
   const filteredResources = resources.filter(resource =>
     resource.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  // I'm calculating the total number of pages based on the number of filtered resources and items per page
   const totalPages = Math.ceil(filteredResources.length / ITEMS_PER_PAGE);
+
+  // This is basically determining the starting index for slicing the filteredResources array based on the current page
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+
+  // contains the resources to be displayed on the current page
   const currentResources = filteredResources.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
   const handlePageClick = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
 
+  // increment the page number
   const handleNext = () => {
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
@@ -84,11 +92,13 @@ const ResourceLibrary = () => {
           </li>
         ))}
       </ul>
+
+      {/* Page numbers are generated dynamically based on totalPages. Clicking a page number updates the currentPage */}
       <div className="pagination">
         <span onClick={handlePrevious} className="arrow">{'<'}</span>
         {Array.from({ length: totalPages }, (_, index) => (
-          <span 
-            key={index + 1} 
+          <span
+            key={index + 1}
             className={`pageNumber ${currentPage === index + 1 ? 'active' : ''}`}
             onClick={() => handlePageClick(index + 1)}
           >

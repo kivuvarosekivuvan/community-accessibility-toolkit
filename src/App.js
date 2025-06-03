@@ -7,7 +7,7 @@ import ColorContrastAnalyzer from './components/ColorContrastAnalyzer';
 import FontSizeAdjuster from './components/FontSizeAdjuster';
 import KeyboardNavigator from './components/KeyboardNavigator';
 import CuriosityCorner from './components/CuriosityCorner';
-import VideoTutorials from './components/VideoTutorials';
+// import VideoTutorials from './components/VideoTutorials';
 import UserFeedback from './components/UserFeedback';
 import DiscussionForum from './components/DiscussionForum';
 import Achievements from './components/Achievements';
@@ -49,8 +49,8 @@ function App() {
         return <KeyboardNavigator />;
       case 'curiosity':
         return <CuriosityCorner />;
-      case 'videoTutorials':
-        return <VideoTutorials />;
+      // case 'videoTutorials':
+        // return <VideoTutorials />;
       case 'userFeedback':
         return <UserFeedback />;
       case 'discussionForum':

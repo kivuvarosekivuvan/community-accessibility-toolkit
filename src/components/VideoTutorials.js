@@ -18,9 +18,11 @@ const VideoTutorials = () => {
     <section>
       <h2>Video Tutorials</h2>
       <div className="video-grid">
+        {/* map function iterating over the videos array, creating a video-item div for each video */}
         {videos.map((video, index) => (
           <div key={index} className="video-item">
             <h3>{video.title}</h3>
+            {/* <iframe> element that embeds the video with the attributes */}
             <iframe
               width="100%"
               height="315"

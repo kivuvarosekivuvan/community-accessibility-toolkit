@@ -9,6 +9,8 @@ const FontSizeAdjuster = () => {
   const [textColor, setTextColor] = useState('#000000');
   const [fontFamily, setFontFamily] = useState('Arial');
 
+
+  //  this is to reset all the state variables to their initial values, allowing my users to revert to the default settings
   const resetSettings = () => {
     setFontSize(16);
     setText("Adjust this text!");
@@ -29,6 +31,8 @@ const FontSizeAdjuster = () => {
         onChange={(e) => setText(e.target.value)}
         placeholder={t('fontSizeAdjuster.placeholder')}
       />
+
+      {/* Putting a range input here to allow my users to adjust the font size between 10 and 50 pixels */}
       <div className="controls">
         <label>{t('fontSizeAdjuster.fontSizeLabel')}</label>
         <input
@@ -38,6 +42,9 @@ const FontSizeAdjuster = () => {
           value={fontSize}
           onChange={(e) => setFontSize(e.target.value)}
         />
+
+
+        {/* A color input for text color, updating the textColor state on change */}
         <div className="color-font-controls">
           <div className="color-control">
             <label>{t('fontSizeAdjuster.textColorLabel')}</label>
@@ -47,6 +54,9 @@ const FontSizeAdjuster = () => {
               onChange={(e) => setTextColor(e.target.value)}
             />
           </div>
+
+
+{/* A dropdown (select) lets users choose a font family from several options, updating the fontFamily state when a selection is made */}
           <div className="font-control">
             <label>{t('fontSizeAdjuster.fontFamilyLabel')}</label>
             <select
