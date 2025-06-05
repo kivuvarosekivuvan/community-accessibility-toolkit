@@ -29,12 +29,7 @@ source venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
-### requirements.txt should include:
-```nginx
-Flask
-flask-cors
-textblob
-```
+
 ### Initialize TextBlob corpora (only once):
 ```bash
 python -m textblob.download_corpora
