@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import './styles/KeyboardNavigator.css';
@@ -12,22 +13,16 @@ const KeyboardNavigator = () => {
     }
   };
 
-  // this here  sets isPopupVisible back to false, hiding the popup
   const closePopup = () => {
     setPopupVisible(false);
   };
 
-  // checking if the pressed key is Escape. If it is, I call closePopup, which hides the popup
   const handleEscapePress = (event) => {
     if (event.key === 'Escape') {
       closePopup();
     }
   };
 
-
-  // The useEffect hook adds the Escape key listener to the window when the popup is visible.
-// If the popup is not visible, it removes the listener.
-// The cleanup function ensures that the listener is removed when the component unmounts or when the visibility changes.
   useEffect(() => {
     if (isPopupVisible) {
       window.addEventListener('keydown', handleEscapePress);
@@ -38,7 +33,7 @@ const KeyboardNavigator = () => {
     return () => {
       window.removeEventListener('keydown', handleEscapePress);
     };
-  }, [isPopupVisible]);
+  }, [isPopupVisible, handleEscapePress]);
 
   return (
     <section>
@@ -66,7 +61,7 @@ const KeyboardNavigator = () => {
             <h3>{t('keyboardNavigator.popupTitle')}</h3>
             <p>{t('keyboardNavigator.popupMessage')}</p>
             <p>
-              {t('keyboardNavigator.popupLink')} 
+              {t('keyboardNavigator.popupLink')}
               <a href="https://webaim.org/techniques/keyboard/" target="_blank" rel="noopener noreferrer">
                 {t('keyboardNavigator.popupLinkText')}
               </a>

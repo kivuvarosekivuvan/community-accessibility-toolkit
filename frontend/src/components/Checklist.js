@@ -18,7 +18,6 @@ const Checklist = () => {
   const [reminder, setReminder] = useState('');
   const [deadline, setDeadline] = useState('');
 
-  // array of my checklist items each with a text and a tooltip
   const checklistItems = [
     { text: t('items.semanticHTML'), tip: t('tips.semanticHTML') },
     { text: t('items.altText'), tip: t('tips.altText') },
@@ -27,24 +26,18 @@ const Checklist = () => {
     { text: t('items.ariaRoles'), tip: t('tips.ariaRoles') },
   ];
 
-
-  // This toggles the checked state of an item. If the item is already checked, it removes it; otherwise, it adds it to the list of checked items
   const handleCheck = (item) => {
     const updatedItems = checkedItems.includes(item)
       ? checkedItems.filter(i => i !== item)
       : [...checkedItems, item];
 
     setCheckedItems(updatedItems);
-
-    //  I'm updating progressHistory by adding a new entry with the current date and the updated list of checked items
     setProgressHistory(prevHistory => [
       ...prevHistory,
       { date: new Date().toLocaleString(), items: updatedItems }
     ]);
   };
 
-
-  // this hook here synchronize checkedItems and progressHistory with local storage whenever they change (set to occur at the same time)
   useEffect(() => {
     localStorage.setItem('checkedItems', JSON.stringify(checkedItems));
     localStorage.setItem('progressHistory', JSON.stringify(progressHistory));
@@ -52,8 +45,6 @@ const Checklist = () => {
 
   const completionPercentage = Math.round((checkedItems.length / checklistItems.length) * 100);
 
-
-  // creating a shareable link containing the checklist data as a URL parameter and uses clipboard API and show an alert to inform my user
   const handleShare = () => {
     const checklistData = JSON.stringify(checkedItems);
     const shareableLink = `${window.location.origin}/?data=${encodeURIComponent(checklistData)}`;
@@ -61,8 +52,6 @@ const Checklist = () => {
     alert(t('alerts.linkCopied'));
   };
 
-
-  // creates a PDF document using jsPDF, then adds the checklist title and each item's status (checked or unchecked) to the document, then saves it as "checklist.pdf"
   const handleExportPDF = () => {
     const doc = new jsPDF();
     doc.text(t('checklist.title'), 20, 20);
@@ -83,8 +72,6 @@ const Checklist = () => {
     setDeadline('');
   };
 
-
-  // sets up a timer that checks every minute if the current time has passed the deadline. If it has, it alerts the user and clears the deadline
   useEffect(() => {
     const interval = setInterval(() => {
       const now = new Date();
@@ -96,11 +83,8 @@ const Checklist = () => {
     }, 60000);
 
     return () => clearInterval(interval);
-  }, [deadline]);
+  }, [deadline, t]);
 
-
-
-  // this resets the progressHistory state and removes it from local storage, while also notifying the user
   const clearProgressHistory = () => {
     setProgressHistory([]);
     localStorage.removeItem('progressHistory');
