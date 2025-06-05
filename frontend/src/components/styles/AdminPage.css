@@ -1,0 +1,179 @@
+/* frontend/src/components/styles/AdminPage.css */
+
+.admin-section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.admin-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.error-box {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: #f8d7da;
+  color: #721c24;
+  border-radius: 4px;
+}
+
+.summary-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 22%;
+  background-color: #ffffff;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.card p {
+  margin: 0.5rem 0 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.chart-container {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1.5rem;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.filters input,
+.filters select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.export-button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.export-button:hover {
+  background-color: #0056b3;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.feedback-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.feedback-table th,
+.feedback-table td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.feedback-table th {
+  background-color: #f1f1f1;
+  font-weight: 600;
+}
+
+.feedback-text-cell {
+  max-width: 250px;
+  word-wrap: break-word;
+}
+
+.sentiment-label {
+  font-weight: 600;
+}
+
+.sentiment-label.positive {
+  color: green;
+}
+
+.sentiment-label.neutral {
+  color: gray;
+}
+
+.sentiment-label.negative {
+  color: red;
+}
+
+.feedback-table tbody tr:nth-child(odd) {
+  background-color: #fcfcfc;
+}
+
+.feedback-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: nowrap;       /* prevent items from wrapping */
+}
+
+.pagination span {
+  white-space: nowrap;     /* keep “Page X of Y” on one line */
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+@media (max-width: 768px) {
+  .summary-cards {
+    flex-direction: column;
+  }
+  .card {
+    flex: 1 1 100%;
+    margin: 0.5rem 0;
+  }
+  .feedback-table th,
+  .feedback-table td {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
+  }
+}
