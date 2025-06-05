@@ -68,7 +68,19 @@ curl -X POST http://127.0.0.1:5000/api/sentiment \
 }
 ```
 
-
+---
+## 🎨 Frontend Setup
+```bash
+cd ../frontend
+npm install
+npm install recharts
+```
+### Start the React dev server:
+```bash
+npm start
+```
+Default URL: http://localhost:3000
+Ensure Flask is running on http://127.0.0.1:5000 so the sentiment endpoint works.
 
 
 
@@ -116,3 +128,37 @@ Your comfort matters! A Dark Mode option is built into the sidebar (click the mo
 We believe accessibility knows no borders. That’s why our toolkit is available in multiple languages, including English, Spanish, Swahili, and Sheng. Everyone deserves access to information in a language they understand and feel comfortable with.
 
 ---
+
+## 🧪 Using the Toolkit
+
+Open your browser to [http://localhost:3000](http://localhost:3000)
+
+### Navigate through the sidebar to access tools like:
+
+- Contrast Color Analyzer  
+- Font Size Adjuster  
+- Keyboard Navigator  
+- Checklist  
+- Resource Library  
+- Video Tutorials  
+- Curiosity Corner  
+- User Feedback  
+- Admin Dashboard  
+
+---
+
+### 📝 Submitting Feedback
+
+1. Enter a category, rating, and your feedback text.
+2. Click **Submit Feedback**.
+3. Sentiment label and score will appear instantly.
+
+---
+
+### 🛠️ Admin Features
+
+- View all feedback submissions.
+- Filter by category or sentiment.
+- Navigate paginated results.
+- View summary cards and bar charts.
+- Export feedback as CSV.
