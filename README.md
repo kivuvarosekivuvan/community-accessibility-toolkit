@@ -108,7 +108,7 @@ Stay on top of your accessibility game with My Checklist. This handy feature all
 Knowledge is power! Dive into our Resource Library, brimming with articles, guides, and best practices tailored to your interests. No matter your level of expertise, you’ll find valuable insights that can elevate your understanding of web accessibility.
 
 
-<img width="800" alt="Screenshot 2025-06-05 at 14 23 37" src="https://github.com/user-attachments/assets/15299cf8-f06f-4b67-b05d-e44d52bbb20c" />
+<img width="600" alt="Screenshot 2025-06-05 at 14 23 37" src="https://github.com/user-attachments/assets/15299cf8-f06f-4b67-b05d-e44d52bbb20c" />
 
 ### 🎥 Video Tutorials  
 Learning is always more fun with visuals! Our collection of YouTube video tutorials covers everything you need to know about web accessibility. Sit back, relax, and let experts guide you through best practices and innovative techniques.
@@ -119,7 +119,7 @@ Feed your curiosity with fascinating facts and insights about accessibility in o
 ### 🗣️ User Feedback  
 We’re all ears! Your thoughts and experiences are vital to us. The User Feedback feature allows you to share what you love and what could be better. Each submission is analyzed for sentiment (Positive / Neutral / Negative) on the backend using TextBlob, and displayed immediately on the form for instant feedback.
 
-<img width="800" alt="Screenshot 2025-06-05 at 14 23 18" src="https://github.com/user-attachments/assets/269a1659-0633-48b3-8b21-85935d12d310" />
+<img width="600" alt="Screenshot 2025-06-05 at 14 23 18" src="https://github.com/user-attachments/assets/269a1659-0633-48b3-8b21-85935d12d310" />
 
 
 ### 📊 Admin Dashboard  
