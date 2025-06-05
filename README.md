@@ -8,6 +8,78 @@ Hello there! Welcome to the Community Accessibility Toolkit—your one-stop solu
 
 ---
 
+
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)  
+- npm or yarn  
+- Python 3.8+  
+- `virtualenv` (optional but recommended)
+
+---
+
+## 🔧 Backend Setup
+```bash
+cd backend
+python3 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+### requirements.txt should include:
+```nginx
+Flask
+flask-cors
+textblob
+```
+### Initialize TextBlob corpora (only once):
+```bash
+python -m textblob.download_corpora
+```
+### Run the Flask server:
+```bash
+export FLASK_APP=app.py
+export FLASK_ENV=development
+python app.py
+```
+#### Expected output:
+```nginx
+Serving Flask app "app.py"
+Environment: development
+Debug mode: on
+Running on http://127.0.0.1:5000/
+```
+### Optional: Test with cURL
+```bash
+curl -X POST http://127.0.0.1:5000/api/sentiment \
+  -H "Content-Type: application/json" \
+  -d '{"feedback":"Love the new features","rating":5,"category":"Compliment"}'
+```
+#### Expected response:
+```json
+{
+  "score": 0.35,
+  "label": "Positive",
+  "rating": 5,
+  "category": "Compliment"
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+---
+
 ## 🧰 What’s Inside?
 
 ### 🎨 Contrast Color Analyzer  
@@ -44,26 +116,3 @@ Your comfort matters! A Dark Mode option is built into the sidebar (click the mo
 We believe accessibility knows no borders. That’s why our toolkit is available in multiple languages, including English, Spanish, Swahili, and Sheng. Everyone deserves access to information in a language they understand and feel comfortable with.
 
 ---
-
-## ⚙️ Getting Started
-
-### Prerequisites
-
-- Node.js (v14 or higher)  
-- npm or yarn  
-- Python 3.8+  
-- `virtualenv` (optional but recommended)
-
----
-
-## 🔧 Backend Setup
-
-```cd backend
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install --upgrade pip
-pip install -r requirements.txt
-
-###
-
-
