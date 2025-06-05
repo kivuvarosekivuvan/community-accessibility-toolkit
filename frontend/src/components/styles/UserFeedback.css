@@ -13,12 +13,12 @@
   .star {
     font-size: 20px;
     cursor: pointer;
-    color: #ccc; /* Default star color */
+    color: #ccc;
     transition: color 0.3s;
   }
   
   .star.filled {
-    color: #f39c12; /* Filled star color */
+    color: #f39c12;
   }
   
   textarea {
