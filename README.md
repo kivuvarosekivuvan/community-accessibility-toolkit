@@ -4,7 +4,7 @@ Hello there! Welcome to the Community Accessibility Toolkit—your one-stop solu
 
 **My goal?** To empower you with the resources and tools you need to ensure everyone can enjoy a seamless digital experience.
 
-![Overview of the tool](Screenshot%202024-11-05%20at%2008.37.15)
+![Overview of the tool](<img width="1679" alt="Screenshot 2025-06-05 at 14 22 32" src="https://github.com/user-attachments/assets/b68a5722-7726-4753-9529-a0e2e93284bb" />)
 
 ---
 
