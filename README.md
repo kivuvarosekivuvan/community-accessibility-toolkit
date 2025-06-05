@@ -105,7 +105,7 @@ Stay on top of your accessibility game with My Checklist. This handy feature all
 Knowledge is power! Dive into our Resource Library, brimming with articles, guides, and best practices tailored to your interests. No matter your level of expertise, you’ll find valuable insights that can elevate your understanding of web accessibility.
 
 
-<img width="200" alt="Screenshot 2025-06-05 at 14 23 37" src="https://github.com/user-attachments/assets/15299cf8-f06f-4b67-b05d-e44d52bbb20c" />
+<img width="800" alt="Screenshot 2025-06-05 at 14 23 37" src="https://github.com/user-attachments/assets/15299cf8-f06f-4b67-b05d-e44d52bbb20c" />
 
 ### 🎥 Video Tutorials  
 Learning is always more fun with visuals! Our collection of YouTube video tutorials covers everything you need to know about web accessibility. Sit back, relax, and let experts guide you through best practices and innovative techniques.
