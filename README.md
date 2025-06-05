@@ -101,6 +101,9 @@ Navigating a website shouldn’t be a maze! Our Keyboard Navigator is your frien
 ### ✅ My Checklist  
 Stay on top of your accessibility game with My Checklist. This handy feature allows you to keep track of what you’ve accomplished and what’s still on your to-do list. It’s like having a personal assistant dedicated to ensuring your projects shine with accessibility!
 
+
+<img width="600" alt="Screenshot 2025-06-05 at 14 23 09" src="https://github.com/user-attachments/assets/b3c8c141-a833-462e-8f02-b83847889503" />
+
 ### 📚 Resource Library  
 Knowledge is power! Dive into our Resource Library, brimming with articles, guides, and best practices tailored to your interests. No matter your level of expertise, you’ll find valuable insights that can elevate your understanding of web accessibility.
 
@@ -115,6 +118,9 @@ Feed your curiosity with fascinating facts and insights about accessibility in o
 
 ### 🗣️ User Feedback  
 We’re all ears! Your thoughts and experiences are vital to us. The User Feedback feature allows you to share what you love and what could be better. Each submission is analyzed for sentiment (Positive / Neutral / Negative) on the backend using TextBlob, and displayed immediately on the form for instant feedback.
+
+<img width="800" alt="Screenshot 2025-06-05 at 14 23 18" src="https://github.com/user-attachments/assets/269a1659-0633-48b3-8b21-85935d12d310" />
+
 
 ### 📊 Admin Dashboard  
 **Only for admins:** View every feedback submission in a comprehensive table that includes timestamp, feedback text, category, rating, sentiment label, and sentiment score. Filter by category or sentiment, page through results, view summary cards, and even export all feedback as CSV. This helps administrators see trends at a glance and dive deep into user insights.
