@@ -58,6 +58,12 @@ We believe accessibility knows no borders. That’s why our toolkit is available
 
 ## 🔧 Backend Setup
 
-
+```cd backend
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install --upgrade pip
+pip install -r requirements.txt
 
 ###
+
+
